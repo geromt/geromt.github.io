@@ -9,24 +9,26 @@ categories: markdown cheatsheet
 
 ## Bold
 
-`**text**`
-
-**text** 
+| Markdown   | Rendered | 
+|------------|----------|
+| `**text**` | **text** |
 
 ## Italic
 
-`*text*`
-
-*text*
+| Markdown | Rendered |
+|----------|----------|
+| `*text*` | *text*   |
 
 ## Ordered List
 
+### Markdown
 ```
 1. first
 2. second
 3. third
 ```
 
+### Rendered
 1. first
 2. second
 3. third
@@ -34,47 +36,53 @@ categories: markdown cheatsheet
 
 ## Unordered List
 
+### Markdown
 ```
 - first
 - second
 - third
 ```
 
+### Rendered
 - first
 - second
 - third
 
 ## Code 
 
-``code``
-
-`code`
+| Markdown | Rendered |
+|----------|----------|
+| \`code\` | `code`   |
 
 ##  Code Block
 
 Indent all the code 4 spaces OR
 
-``````
+### Markdown
+\`\`\`
 code
-``````
+\`\`\`
 
+### Rendered
 ```
 code
 ```
 
 ## Horizontal Rule
 
-`---`
-
----
+| Markdown | Rendered |
+|----------|----------|
+|`---`     | -------- |
 
 ## Link
 
-`[Duck Duck Go](https://duckduckgo.com)`
-
-[Duck Duck Go](https://duckduckgo.com)
+| Markdown                                | Rendered                               |
+|-----------------------------------------|----------------------------------------|
+|`[Duck Duck Go](https://duckduckgo.com)` | [Duck Duck Go](https://duckduckgo.com) |
 
 ## Image
 
-`![Image](link)`
+| Markdown                                                                | Rendered |
+|-------------------------------------------------------------------------|----------|
+| `![Linux](https://www.brosix.com/wp-content/uploads/Linux_Logo_07.png)` | ![Linux](https://www.brosix.com/wp-content/uploads/Linux_Logo_07.png) |
 
