@@ -106,3 +106,4 @@ describe("Component", () => {
     screen.getByText("Winner:")
   })
 })
+```
