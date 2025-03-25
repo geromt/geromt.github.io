@@ -98,8 +98,6 @@ INSTALLED_APPS = [
 ]
 ```
 
-
-
 ## Vistas
 
 - Vistas Basadas en Clases
@@ -143,40 +141,17 @@ urlpatterns = [
 
 En la aplicación creamos un directorio `templates`. En esta podemos guardar archivos de jinja2
 
-```html
-{% load static %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Taller</title>
-    <link rel="stylesheet" href="{% static 'estilos.css' %}">
-</head>
-<body>
-    <h1>Esta es la template</h1>
-
-    <hr>
-    {% for i in objeto %}
-    <li><a href="autor/{{i.id}}">{{i.nombre}}</a></li>
-    <ul>
-        {% for u in i.profesion.all %}
-        <li>{{u.nombre}}</li>
-        {% endfor %}
-    </ul>
-    {% endfor %}
-    <script src="{% static 'script.js' %}" ></script>
-</body>
-</html>
-```
-
 Para renderizarlo, en `views.py` utilizamos `render`.
 
-Para cargar los archivos estáticos se tiene que agregar `{% load static %}`
+Para cargar los archivos estáticos se tiene que agregar
 
-## Models 
+```django
+{% load static %}
+```
+
+## Models
 
 En `models.py` definimos nuestros modelos y utilizamos el ORM que viene dentro de Django para generar las tablas. Por ejemplo,
-
 ```python
 class Profesion(models.Model):
     nombre = models.CharField(max_length=64, verbose_name="Nombre")
