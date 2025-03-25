@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TDD con React y Vite"
+title:  "Inyección de dependencias con Node.js"
 date:   2025-03-17 17:00:00 -0600
 categories: React Vite
 ---
