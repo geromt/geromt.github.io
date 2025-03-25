@@ -143,12 +143,7 @@ En la aplicación creamos un directorio `templates`. En esta podemos guardar arc
 
 Para renderizarlo, en `views.py` utilizamos `render`.
 
-Para cargar los archivos estáticos se tiene que agregar
-
-```django
-{% load static %}
-```
-
+Para cargar los archivos estáticos se tiene que agregar `load static`
 ## Models
 
 En `models.py` definimos nuestros modelos y utilizamos el ORM que viene dentro de Django para generar las tablas. Por ejemplo,
